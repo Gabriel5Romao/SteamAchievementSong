@@ -2,7 +2,7 @@ import requests as r
 import playsound as ps
 import time as t
 api_key = "Put your API Key Here" 
-
+music = "put the name of your music.mp3"
 steam_id = "Put your SteamID64 Here"
 
 # Getting the game list
@@ -66,7 +66,7 @@ while True:
         print("The apllications is'n not running correctly, please restart.")
 
     elif achieved_now != already_achieved:
-        ps.playsound('ps3-trophy-sound-effect.mp3')
+        ps.playsound(music)
         already_achieved = achieved_now
     
     t.sleep(2)
